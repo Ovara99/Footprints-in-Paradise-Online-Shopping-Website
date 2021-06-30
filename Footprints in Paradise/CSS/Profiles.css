@@ -1,0 +1,71 @@
+
+body {
+    background-color: #474e5d;
+    font-family: Arial;
+    background-image: url("ImagesAll/images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+  }
+
+
+.headingProfiles{
+	margin:0;
+	padding:20px;
+}
+
+#profiles{
+	margin:0 30px;
+}
+
+.profileContainer {
+  max-width: 500px;
+  float:left;
+  margin-left:30px;
+}
+
+.image {
+  display: block;
+  width:250px;
+  height:300px;
+  margin:0 auto;
+}
+
+.overlay {
+  background:none;/* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  color: white;
+  padding: 20px 30px;
+}
+.overlay >1{
+	opacity:1;
+}
+
+.overlay p{
+	color: white;
+	font-size:40px;
+	text-align: center;
+	opacity:0;
+	margin:10px;
+}
+
+.overlay #lakName{
+	font-size:30px;
+	margin-top:25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding :10px;
+}
+
+.profileContainer:hover .overlay{
+	background: rgba(0, 0, 0, 0.5); 
+}
+
+.profileContainer:hover .overlay p{
+	opacity:1;
+}
